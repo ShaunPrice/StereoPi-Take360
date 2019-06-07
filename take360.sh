@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo Add a -p switch to display the 360 degree panorama image
+
 mkdir -p tmp
 
 echo Capturing first picture
@@ -16,5 +18,7 @@ hugin_executor --stitching --prefix=output ./tmp/project.pto
 echo Cleaning up
 rm -rf ./tmp
 
-echo Diplaying 360 degree Panorama image
-eog output.jpg
+if [ "$1" = "-p" ]; then
+	echo Diplaying 360 degree Panorama image
+	eog output.jpg
+fi

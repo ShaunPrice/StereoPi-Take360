@@ -14,6 +14,10 @@ The command line format is:
 
 	./take360.sh
 
+To previwe the image after it's processed use the -p switch:
+
+	./take360.sh
+
 This will capture the two images from the StereoPi's cameras and output the 360 degree panorama to:
 
 	output.jpg
