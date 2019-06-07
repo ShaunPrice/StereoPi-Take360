@@ -17,7 +17,6 @@ echo "Installing enblend"
 sudo apt-get install enblend
 echo "Completed enblend install"  #This doesn't actually check if the installation was successful, so it is possible for the install to fail but this message to still appear. 
 
-
 # Making scripts executable
 chmod +x *.sh
 

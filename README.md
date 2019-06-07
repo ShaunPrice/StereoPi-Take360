@@ -12,12 +12,17 @@ Replace the stereopi-temlate.pto with the template you created using Hugin.
 
 The command line format is:
 
-	./take360.sh
+	./take360 [-p][-g][-r][-h]
 
-To previwe the image after it's processed use the -p switch:
-
-	./take360.sh
+	./take360         Create the panorama image as output.jpg.
+	./take360 -p      Create the panorama image as output.jpg and preview the image.
+	./take360 -g      Generate and save the project file for re-use in processing images.
+	./take360 -r      Re-use the previously saved project file saved using the -s switch.to create the panorama image
+	./take360 -g -r   Same as no option plus it saves the project file for re-use in processing images.
+	./take360 -h      This help
 
 This will capture the two images from the StereoPi's cameras and output the 360 degree panorama to:
 
 	output.jpg
+
+Further help and updates from https://github.com/ShaunPrice/StereoPi-Take360.
